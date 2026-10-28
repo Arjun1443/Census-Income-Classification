@@ -1,39 +1,33 @@
-# Census-Income-Classification
-Census Income Classification This project focuses on predicting whether an individual's income exceeds $50K per year using the Census Income dataset. The dataset consists of various demographic and employment-related attributes.
+# Census Income Classification
 
+A tabular machine-learning project exploring income-category classification from demographic and employment attributes.
 
-🔍 Project Overview
-The goal of this project is to build a classification model that can accurately predict income categories based on features such as age, education, occupation, and more.
+## Why this project matters
 
-📊 Models Used
-Three machine learning models were implemented and compared:
+The project provides a setting for practicing preprocessing, exploratory analysis, classifier comparison, and evaluation on structured data.
 
-Logistic Regression
-Decision Tree
-Random Forest
+## Repository contents
 
+- [Census income.ipynb](<Census income.ipynb>): analysis and modeling notebook
+- [census-income_.csv](census-income_.csv): included dataset
 
-📌 Key Steps
-Data Preprocessing:
+## Technical focus
 
-Handled missing values and outliers.
-Performed label encoding for categorical variables.
-Standardized numerical features.
-Exploratory Data Analysis (EDA):
+Python · pandas · NumPy · scikit-learn · Matplotlib · Seaborn
 
-Visualized income distribution across various features.
-Identified correlations between attributes.
-Model Training & Evaluation:
+The existing project documentation describes logistic regression, decision tree, and random forest experiments. Inspect the notebook and rerun its cells before relying on model comparisons.
 
-Split the dataset into training and testing sets.
-Tuned hyperparameters for optimal performance.
-Evaluated models using accuracy, precision, recall, and F1-score.
-📈 Results
-Logistic Regression: Baseline model with decent interpretability.
-Decision Tree: Overfitting observed with deep trees.
-Random Forest: Achieved the best performance with high accuracy and better generalization.
-🛠 Technologies Used
-Python
-Pandas, NumPy
-Scikit-Learn
-Matplotlib, Seaborn
+## Explore locally
+
+```bash
+git clone https://github.com/Arjun1443/Census-Income-Classification.git
+cd Census-Income-Classification
+python -m pip install numpy pandas scikit-learn matplotlib seaborn jupyter
+python -m jupyter notebook
+```
+
+Open the notebook, point its data-loading cell to `census-income_.csv`, and review the split and preprocessing order before training.
+
+## Evaluation considerations
+
+Report precision, recall, F1, class balance, and the evaluation split alongside accuracy. Demographic data can encode historical disparities; this educational model should not be treated as a validated tool for decisions about individuals. No independently reproduced performance claim is made here.
