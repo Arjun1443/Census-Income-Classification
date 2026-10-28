@@ -1,5 +1,19 @@
 # Census Income Classification
 
+## Interactive Streamlit app
+
+A companion application is available in [streamlit_app/app.py](streamlit_app/app.py).
+
+```bash
+python -m pip install -r streamlit_app/requirements.txt
+python -m streamlit run streamlit_app/app.py
+```
+
+This app fits a fresh random-forest baseline from the included dataset. Its evaluation is separate from prior notebook runs.
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for Community Cloud setup, validation coverage, and runtime requirements. A live deployment is not yet confirmed.
+
+
 A tabular machine-learning project exploring income-category classification from demographic and employment attributes.
 
 ## Why this project matters
